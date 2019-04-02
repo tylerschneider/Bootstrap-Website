@@ -35,14 +35,14 @@ h1, p {
 @media (min-width: 0px) {  
     h1 {font-size: 20px;}
 	p {font-size: 14px;}
-	.jumbotron-description {font-size: 10px;}
+	.description {font-size: 10px;}
 	.seperator {border-width: 1px; margin: 0.5rem auto 0.5rem;}
 }
 
 /* Medium devices */
 @media (min-width: 544px) {  
     h1 {font-size: 42px;}
-	.jumbotron-description {font-size: 15px;}
+	.description {font-size: 15px;}
 	.seperator {border-width: 2px; margin: 1rem auto 1rem;}
 }
 
@@ -50,13 +50,13 @@ h1, p {
 @media (min-width: 756px) {  
     h1 {font-size: 62px;}
 	p {font-size: 24px;}
-	.jumbotron-description {font-size: 20px;}
+	.description {font-size: 20px;}
 	.seperator {border-width: 3px; margin: 1.5rem auto 1.5rem;}
 }
 
 @media (min-width: 1200) {
     h1 {font-size: 80px;}
-	.jumbotron-description {font-size: 25px;}
+	.description {font-size: 25px;}
 	.seperator {border-width: 4px; margin: 2rem auto 2rem;}
 }
 
@@ -67,7 +67,70 @@ h1, p {
 }
 
 .bio {
+	padding-top: 5%;
 	padding-left: 20%;
 	padding-right: 20%;
-	padding-bottom: 2rem;
+	padding-bottom: 5%;
+	margin-bottom: 7rem;
+}
+
+.info {
+	padding-top: 200px;
+}
+
+.parallax {
+	margin-bottom: 7rem;
+}
+
+.pockethealer { 
+ 	background-image: url("../images/PH.png");
+
+  	height: 680px;
+
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.inthegarden { 
+ 	background-image: url("../images/ITG.png");
+
+  	height: 680px;
+
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.wordpress { 
+ 	background-image: url("../images/PH.png");
+
+  	height: 680px;
+
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.emojiplace { 
+ 	background-image: url("../images/PH.png");
+
+  	height: 680px;
+
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.contactform {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.submitbutton {
+	width: 100%;
 }
