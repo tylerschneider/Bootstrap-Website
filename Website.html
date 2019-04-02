@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+	
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tyler Schneider Portfolio</title>
+	<link rel="icon" type="image/png" href="images/icon-white.png">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
     @import url("css/stylesheet.css");
     </style>
@@ -16,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top pl-5 pr-5">
 		
 		   
-		   <a class="navbar-brand" href="#"><img src="images/small-white.png" alt="logo" width="70px"/></a>
+		   <a class="navbar-brand" href="#"><img src="images/small-white.png" alt="logo" width="90"/></a>
 		   
 		   
 		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,17 +99,39 @@
 		<div class="info text-center">
 			<h1>In The Garden</h1>
 			<hr class="seperator">
-		    <p class="lead description">My first animation, made in Adobe Animate. Music by Red Vox.</p>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-modal-lg">Watch</button>
-			<div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-			  <div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<video controls>
-						<source src="videos/TylerSchneider_InTheGarden.mp4" type="video/mp4">
-					</video>
-				</div>
-			  </div>
-			</div>
+		    <p class="lead description">My first animation, currently a work in progress. Music by Red Vox.</p>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#animationModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="animationModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header-->
+        <div class="modal-header">
+          <h4 class="modal-title">In The Garden</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div> 
+        
+        <!-- Modal body -->
+        <div class="modal-content">
+			<video controls>
+				<source src="videos/TylerSchneider_InTheGarden.mp4" type="video/mp4">
+			</video>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+			
 		</div>
 	</section>
 	  
@@ -156,10 +180,8 @@
 
 	</section>
 
-    <footer class="row">
-       <div class="pt-2 text-center col-lg-6 offset-lg-3">
+    <footer class="page-footer text-center py-2">
           <p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="#">To Top</a></p>
-       </div>
     </footer>
 	  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

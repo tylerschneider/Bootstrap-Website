@@ -5,6 +5,10 @@ nav, footer, section {
 	background-color: darkcyan;
 }
 
+nav {
+	font-size: 1.2em;
+}
+
 h1, p {
 	color: white;
 }
@@ -20,7 +24,7 @@ a:hover {
 .jumbotron {
 	position: absolute;
 	padding-top: 10%;
-	top: 70px;
+	top: 10rem;
 	margin: auto;
 	width: 100%;
 	z-index: 1;
@@ -28,10 +32,10 @@ a:hover {
 
 .carousel {
 	position: relative;
-	top:70px;
+	top: 10rem;
 	width: 100%;
 	z-index: 0;
-	margin-bottom: 7rem;
+	margin-bottom: 15rem;
 }
 .carousel-image {
 	width: 100%;
@@ -41,16 +45,16 @@ a:hover {
 
 /* Small devices */
 @media (min-width: 0px) {  
-    h1 {font-size: 20px;}
-	p {font-size: 14px;}
-	.description {font-size: 10px;}
+    h1 {font-size: 28px;}
+	p {font-size: 18px;}
+	.description {font-size: 15px;}
 	.seperator {border-width: 1px; margin: 0.5rem auto 0.5rem;}
 }
 
 /* Medium devices */
 @media (min-width: 544px) {  
     h1 {font-size: 42px;}
-	.description {font-size: 15px;}
+	.description {font-size: 18px;}
 	.seperator {border-width: 2px; margin: 1rem auto 1rem;}
 }
 
@@ -58,13 +62,13 @@ a:hover {
 @media (min-width: 756px) {  
     h1 {font-size: 62px;}
 	p {font-size: 24px;}
-	.description {font-size: 20px;}
+	.description {font-size: 22px;}
 	.seperator {border-width: 3px; margin: 1.5rem auto 1.5rem;}
 }
 
 @media (min-width: 1200) {
     h1 {font-size: 80px;}
-	.description {font-size: 25px;}
+	.description {font-size: 26px;}
 	.seperator {border-width: 4px; margin: 2rem auto 2rem;}
 }
 
@@ -146,4 +150,8 @@ a:hover {
 
 .submitbutton {
 	width: 100%;
+}
+
+.modal-header {
+	background-color: darkcyan;
 }
