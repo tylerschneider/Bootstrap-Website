@@ -77,10 +77,10 @@
 		
     </header>
 	  
-	<section id="bio">
+	<section id="bio" class="bio">
 	  <h1 class="text-center pt-2">About Me</h1>
 		<hr class="seperator">
-		<p class="bio">	&emsp; &emsp; I am currently enrolled in the GIMM program at Boise State University. I am learning and enjoying game design and coding (including Actionscript, Unity, HTML, CSS, and Javascript), as well as animation, illustration, and 3D modeling. Graphic design is also something I enjoy doing casually, especially logo design. My current main project is this website, but next I will be working on a new animation for GIMM 250 and an emoji-based review map for GIMM 300 which you can see below. </p>
+		<p class="bio-text">	&emsp; &emsp; I am currently enrolled in the GIMM program at Boise State University. I am learning and enjoying game design and coding (including Actionscript, Unity, HTML, CSS, and Javascript), as well as animation, illustration, and 3D modeling. Graphic design is also something I enjoy doing casually, especially logo design. My current main project is this website, but next I will be working on a new animation for GIMM 250 and an emoji-based review map for GIMM 300 which you can see below. </p>
 		
 	</section>
 	  
@@ -98,7 +98,16 @@
 			<h1>In The Garden</h1>
 			<hr class="seperator">
 		    <p class="lead description">My first animation, made in Adobe Animate. Music by Red Vox.</p>
-			<button class="btn btn-primary">Watch</button>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-modal-lg">Watch</button>
+			<div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<video controls>
+						<source src="videos/TylerSchneider_InTheGarden.mp4" type="video/mp4">
+					</video>
+				</div>
+			  </div>
+			</div>
 		</div>
 	</section>
 	  
@@ -127,18 +136,18 @@
 		<form class="contactform">
 		  <div class="form-row">
 			<div class="form-group col-md-6">
-			  <input type="text" class="form-control" id="inputName" placeholder="Name">
+			  <input type="text" class="form-control" id="inputName" placeholder="Name" required>
 			</div>
 			<div class="form-group col-md-6">
-			  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+			  <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
 			  </div>
 			</div>
 			<div class="form-group">
-			  <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+			  <input type="text" class="form-control" id="inputSubject" placeholder="Subject" required>
 			</div>
 
 			<div class="form-group">
-			  <textarea class="form-control" id="inputText" rows="3" placeholder="Type here..."></textarea>
+			  <textarea class="form-control" id="inputText" rows="3" placeholder="Type here..." required></textarea>
 			</div>
 
 			<button type="submit" class="btn btn-primary submitbutton">Submit</button>
@@ -149,7 +158,7 @@
 
     <footer class="row">
        <div class="pt-2 text-center col-lg-6 offset-lg-3">
-          <p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="#">My Website</a></p>
+          <p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="#">To Top</a></p>
        </div>
     </footer>
 	  
