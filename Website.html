@@ -91,7 +91,37 @@
 			<h1>Pocket Healer</h1>
 			<hr class="seperator">
 		    <p class="lead description">My first game. Play as a healer and protect your team!</p>
-			<button class="btn btn-primary">Play</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gameModal">
+    Play
+  </button>
+
+  <div class="modal" id="gameModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header-->
+        <div class="modal-header">
+          <h4 class="modal-title">Pocket Healer</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div> 
+        
+        <!-- Modal body -->
+        <div class="modal-content game-display">
+			<div class="videoWrapper">
+				<div id="flash-content">
+					<embed src="games/pocketHealer.swf" width="100%" height="100%"/>
+				</div>
+			</div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div> 
+        
+      </div>
+    </div>
+  </div>
 		</div>
 	</section>
 	  
@@ -102,10 +132,9 @@
 		    <p class="lead description">My first animation, currently a work in progress. Music by Red Vox.</p>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#animationModal">
-    Open modal
+    Watch
   </button>
 
-  <!-- The Modal -->
   <div class="modal" id="animationModal">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
