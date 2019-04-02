@@ -7,9 +7,8 @@ nav {
 
 .jumbotron {
 	position: absolute;
+	padding-top: 200px;
 	top: 70px;
-	padding-top: 10%;
-	padding-bottom: 10%;
 	width:100%;
 	z-index: 1;
 }
@@ -19,4 +18,14 @@ nav {
 	top:70px;
 	width: 100%;
 	z-index: 0;
+}
+.carousel-image {
+	width: 100%;
+	padding: auto;
+	margin: auto;
+}
+
+.jumbotron-seperator {
+	width: 50%;
+	border-width: 3px;
 }
